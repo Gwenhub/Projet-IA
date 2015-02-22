@@ -11,3 +11,7 @@ C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\t
 C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\bin\Debug\projettaquin.exe.config
 C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.exe
 C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.pdb
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.csprojResolveAssemblyReference.cache
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.Form1.resources
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.Properties.Resources.resources
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\taquin\projettaquin\obj\Debug\projettaquin.csproj.GenerateResource.Cache
