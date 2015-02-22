@@ -20,9 +20,8 @@ namespace projettaquin
         public Form1()
         {
             InitializeComponent();
-            map = new char[,]   //Création de la map des pièces grâce à un tableau
-                                //La valeur indique le numéro de la nature de la pièce (case, mur...)
-            {                   
+            map = new char[,]
+            {
                 {'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'},
                 {'w','a','a','a','a','a','a','a','a','-','d','d','d','d','w','e','e','e','e','w'},
                 {'w','a','a','a','a','a','a','a','a','-','d','d','d','d','w','e','e','e','e','w'},
@@ -50,8 +49,6 @@ namespace projettaquin
             nbAffichee = 0;
         }
 
-
-        // Résolution d'un des trois énnoncés
         private void button2_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
@@ -86,12 +83,12 @@ namespace projettaquin
             Graph g = new Graph();
 
             // path finding 1
-            //NodeTaquin N0 = new NodeTaquin(textBox1.Text, textBox2.Text, map);
-            //Lres = g.RechercheSolutionAEtoile(N0);
+            NodeP2 N0 = new NodeP2(textBox1.Text, textBox2.Text, map);
+            Lres = g.RechercheSolutionAEtoile(N0);
 
             // path finding 2
-            //NodeTaquin N1 = new NodeTaquin(textBox2.Text, textBox3.Text, map);
-            //Lres.AddRange(g.RechercheSolutionAEtoile(N1));
+            NodeP2 N1 = new NodeP2(textBox2.Text, textBox3.Text, map);
+            Lres.AddRange(g.RechercheSolutionAEtoile(N1));
 
             if (Lres.Count == 0)
             {
@@ -120,10 +117,10 @@ namespace projettaquin
             else
             {
                 GenericNode n = null;
-                //if(Lres[nbAffichee] is NodeP1)
-                  //  n = Lres[nbAffichee] as NodeP1;
-                //if(Lres[nbAffichee] is NodeP2)
-                  //  n = Lres[nbAffichee] as NodeP2;
+                if(Lres[nbAffichee] is NodeP1)
+                    n = Lres[nbAffichee] as NodeP1;
+                if(Lres[nbAffichee] is NodeP2)
+                    n = Lres[nbAffichee] as NodeP2;
                 //if(Lres[nbAffichee] is NodeP3)
                 //    n = Lres[nbAffichee] as NodeP3;
                 int row = int.Parse(n.GetNom().Split(',')[0]);
@@ -158,7 +155,6 @@ namespace projettaquin
             }
         }
 
-        // Résolution d'un des trois énnoncés
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
@@ -193,12 +189,12 @@ namespace projettaquin
             Graph g = new Graph();
 
             // path finding 1
-            //NodeP1 N0 = new NodeP1(textBox1.Text, textBox2.Text, map);
-            //Lres = g.RechercheSolutionAEtoile(N0);
+            NodeP1 N0 = new NodeP1(textBox1.Text, textBox2.Text, map);
+            Lres = g.RechercheSolutionAEtoile(N0);
 
             // path finding 2
-            //NodeP1 N1 = new NodeP1(textBox2.Text, textBox3.Text, map);
-            //Lres.AddRange(g.RechercheSolutionAEtoile(N1));
+            NodeP1 N1 = new NodeP1(textBox2.Text, textBox3.Text, map);
+            Lres.AddRange(g.RechercheSolutionAEtoile(N1));
 
             if (Lres.Count == 0)
             {
@@ -217,7 +213,6 @@ namespace projettaquin
             }
         }
 
-        // Résolution d'un des trois énnoncés
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -253,12 +248,12 @@ namespace projettaquin
             Graph g = new Graph();
 
             // path finding 1
-            //NodeP2 N0 = new NodeP2(textBox1.Text, textBox2.Text, map);
-            //Lres = g.RechercheSolutionAEtoile(N0);
+            NodeP2 N0 = new NodeP2(textBox1.Text, textBox2.Text, map);
+            Lres = g.RechercheSolutionAEtoile(N0);
 
             // path finding 2
-            //NodeP2 N1 = new NodeP2(textBox2.Text, textBox3.Text, map);
-            //Lres.AddRange(g.RechercheSolutionAEtoile(N1));
+            NodeP2 N1 = new NodeP2(textBox2.Text, textBox3.Text, map);
+            Lres.AddRange(g.RechercheSolutionAEtoile(N1));
 
             if (Lres.Count == 0)
             {
