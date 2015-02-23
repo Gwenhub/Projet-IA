@@ -119,15 +119,15 @@ namespace projettaquin
                 GenericNode n = null;
                 if(Lres[nbAffichee] is NodeP1)
                     n = Lres[nbAffichee] as NodeP1;
-                if(Lres[nbAffichee] is NodeP1)
-                    n = Lres[nbAffichee] as NodeP1;
+                if(Lres[nbAffichee] is NodeP2)
+                    n = Lres[nbAffichee] as NodeP2;
                 //if(Lres[nbAffichee] is NodeP3)
                 //    n = Lres[nbAffichee] as NodeP3;
                 int row = int.Parse(n.GetNom().Split(',')[0]);
                 int column = int.Parse(n.GetNom().Split(',')[1]);
                 if (tableLayoutPanel1.GetControlFromPosition(column, row) is PictureBox)
                 {
-                    PictureBox p = tableLayoutPanel1.GetControlFromPosition(column, row) as PictureBox;
+                    PictureBox p = tableLayoutPanel1.GetControlFromPosition(row, column) as PictureBox;
                     p.BackColor = Color.Red;
                 }
                 nbAffichee++;
@@ -189,11 +189,11 @@ namespace projettaquin
             Graph g = new Graph();
 
             // path finding 1
-            NodeP1 N0 = new NodeP1(textBox1.Text, textBox2.Text, map);
+            NodeP2 N0 = new NodeP2(textBox1.Text, textBox2.Text, map);
             Lres = g.RechercheSolutionAEtoile(N0);
 
             // path finding 2
-            NodeP1 N1 = new NodeP1(textBox2.Text, textBox3.Text, map);
+            NodeP2 N1 = new NodeP2(textBox2.Text, textBox3.Text, map);
             Lres.AddRange(g.RechercheSolutionAEtoile(N1));
 
             if (Lres.Count == 0)

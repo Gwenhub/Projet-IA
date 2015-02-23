@@ -8,7 +8,7 @@ namespace projettaquin
 {
     //Classe fille pour le problème Numéro 1
 
-    class NodeP1 : GenericNode
+    class NodeP2 : GenericNode
     {
         //coordonnée départ
         private int _coordXD { get; set; }
@@ -18,11 +18,11 @@ namespace projettaquin
         private int _coordXA { get; set; }
         private int _coordYA { get; set; }
 
-        private char[,] _map {get; set;}
+        private char[,] _map { get; set; }
         private string _end;
 
         //Récupération des coordonnées du point de départ et du point d'arrivée 
-        public NodeP1(string name, string end, char[,] map)
+        public NodeP2(string name, string end, char[,] map)
             : base(name)
         {
 
@@ -63,49 +63,86 @@ namespace projettaquin
 
 
             List<GenericNode> lsucc = new List<GenericNode>();
-            
-            
+
+
             // Successeur à gauche
-            if (posx > 1 && _map[(_coordXD - 1), _coordYD] != '-' )
+            if (posx > 1 )
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD - 1) + "," + _coordYD;
                 // Ajout à listsucc
 
-                lsucc.Add(new NodeP1(name2, _end, _map));
+                lsucc.Add(new NodeP2(name2, _end, _map));
 
             }
 
             // Successeur à droite
-            if (posx < 18 && _map[(_coordXD + 1), _coordYD] != '-')
+            if (posx < 18)
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD + 1) + "," + _coordYD;
 
                 // Ajout à listsucc
-                lsucc.Add(new NodeP1(name2, _end, _map));
+                lsucc.Add(new NodeP2(name2, _end, _map));
             }
-            
-            
+
+
             // Successeur en haut
-            if (posy > 1 && _map[_coordXD, (_coordYD - 1)] != '-')
+            if (posy > 1 )
             {
                 // MAJ de la position du noeud en cours
                 string name2 = _coordXD + "," + (_coordYD - 1);
 
                 // Ajout à listsucc
-                lsucc.Add(new NodeP1(name2, _end, _map));
+                lsucc.Add(new NodeP2(name2, _end, _map));
             }
 
 
             // Successeur en bas
-            if (posy < 18 && _map[_coordXD, (_coordYD + 1)] != '-')
+            if (posy < 18 )
             {
                 // MAJ de la position du noeud en cours
-                string name2 =  _coordXD + "," + (_coordYD + 1);
+                string name2 = _coordXD + "," + (_coordYD + 1);
                 // Ajout à listsucc
-                lsucc.Add(new NodeP1(name2, _end, _map));
+                lsucc.Add(new NodeP2(name2, _end, _map));
             }
+
+            // Successeur haut gauche
+            if (posy > 2 && posx > 2)
+            {
+                // MAJ de la position du noeud en cours
+                string name2 = (_coordXD - 1) + "," + (_coordYD - 1);
+                // Ajout à listsucc
+                lsucc.Add(new NodeP2(name2, _end, _map));
+            }
+
+            // Successeur haut droit
+            if (posy > 2 && posx < 18)
+            {
+                // MAJ de la position du noeud en cours
+                string name2 = (_coordXD + 1) + "," + (_coordYD - 1);
+                // Ajout à listsucc
+                lsucc.Add(new NodeP2(name2, _end, _map));
+            }
+
+            // Successeur bas droite
+            if (posy < 18 && posx < 18)
+            {
+                // MAJ de la position du noeud en cours
+                string name2 = (_coordXD + 1) + "," + (_coordYD + 1);
+                // Ajout à listsucc
+                lsucc.Add(new NodeP2(name2, _end, _map));
+            }
+
+            // Successeur bas gauche
+            if (posy < 18 && posx > 2)
+            {
+                // MAJ de la position du noeud en cours
+                string name2 = (_coordXD - 1) + "," + (_coordYD + 1);
+                // Ajout à listsucc
+                lsucc.Add(new NodeP2(name2, _end, _map));
+            }
+
 
             return lsucc;
         }
