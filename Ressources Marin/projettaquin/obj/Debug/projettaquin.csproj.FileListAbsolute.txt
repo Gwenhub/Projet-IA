@@ -1,0 +1,23 @@
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\projettaquin\bin\Debug\projettaquin.exe.config
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\bin\Debug\projettaquin.exe.config
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.csprojResolveAssemblyReference.cache
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.Form1.resources
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.Properties.Resources.resources
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.csproj.GenerateResource.Cache
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\bin\Debug\projettaquin.exe
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\bin\Debug\projettaquin.pdb
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.exe
+C:\Users\jsalotti\Documents\enseignement\Ingénieurs\intelligence artificielle\taquin\projettaquin\obj\Debug\projettaquin.pdb
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\bin\Debug\projettaquin.exe.config
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.exe
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.pdb
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\bin\Debug\projettaquin.exe
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\bin\Debug\projettaquin.pdb
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.csprojResolveAssemblyReference.cache
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.Form1.resources
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.Properties.Resources.resources
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.csproj.GenerateResource.Cache
+C:\Users\Gutierrez\Documents\ENSC&Projets\2A Marin\Intelligence Artificielle\ProjetSalotti\taquin\projettaquin\obj\Debug\projettaquin.Grille_Deplacement.resources
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\Ressources Marin\projettaquin\bin\Debug\projettaquin.exe.config
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\Ressources Marin\projettaquin\obj\Debug\projettaquin.exe
+C:\Users\Gwendal\Documents\GitHub\Projet-IA\Ressources Marin\projettaquin\obj\Debug\projettaquin.pdb
