@@ -103,6 +103,7 @@ namespace projettaquin
             List<GenericNode> listsucc = N.GetListSucc();
             foreach (GenericNode N2 in listsucc)
             {
+
                 // N2 est-il une copie d'un nœud déjà vu et placé dans la liste des fermés ?
                 GenericNode N2bis = ChercheNodeDansFermes(N2.GetNom());
                 if (N2bis == null)

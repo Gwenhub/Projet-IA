@@ -66,7 +66,7 @@ namespace projettaquin
             
             
             // Successeur à gauche
-            if (posx > 1 && _map[(_coordXD - 1), _coordYD] != '-' )
+            if (posx > 1 && _map[_coordYD,(_coordXD - 1)] != 'w' ) // la comparaison est faite seulement au début
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD - 1) + "," + _coordYD;
@@ -74,10 +74,12 @@ namespace projettaquin
 
                 lsucc.Add(new NodeP1(name2, _end, _map));
 
+
+
             }
 
             // Successeur à droite
-            if (posx < 18 && _map[(_coordXD + 1), _coordYD] != '-')
+            if (posx < 18 && _map[_coordYD,(_coordXD + 1)] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD + 1) + "," + _coordYD;
@@ -88,7 +90,7 @@ namespace projettaquin
             
             
             // Successeur en haut
-            if (posy > 1 && _map[_coordXD, (_coordYD - 1)] != '-')
+            if (posy > 1 && _map[(_coordYD - 1),_coordXD] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = _coordXD + "," + (_coordYD - 1);
@@ -99,7 +101,7 @@ namespace projettaquin
 
 
             // Successeur en bas
-            if (posy < 18 && _map[_coordXD, (_coordYD + 1)] != '-')
+            if (posy < 18 && _map[(_coordYD + 1),_coordXD] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 =  _coordXD + "," + (_coordYD + 1);
@@ -113,7 +115,7 @@ namespace projettaquin
 
         public override void CalculeHCost()
         {
-            SetEstimation(0);
+               SetEstimation(0);             
         }
 
 
