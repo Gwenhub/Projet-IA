@@ -66,7 +66,7 @@ namespace projettaquin
 
 
             // Successeur à gauche
-            if (posx > 1 )
+            if (posx > 1 && _map[_coordYD,(_coordXD - 1)] != 'w' ) 
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD - 1) + "," + _coordYD;
@@ -77,7 +77,7 @@ namespace projettaquin
             }
 
             // Successeur à droite
-            if (posx < 18)
+            if (posx < 18  && _map[_coordYD,(_coordXD + 1)] != 'w' )
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD + 1) + "," + _coordYD;
@@ -88,7 +88,7 @@ namespace projettaquin
 
 
             // Successeur en haut
-            if (posy > 1 )
+            if (posy > 1 && _map[(_coordYD - 1), _coordXD] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = _coordXD + "," + (_coordYD - 1);
@@ -99,7 +99,7 @@ namespace projettaquin
 
 
             // Successeur en bas
-            if (posy < 18 )
+            if (posy < 18 && _map[(_coordYD + 1), _coordXD] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = _coordXD + "," + (_coordYD + 1);
@@ -108,7 +108,7 @@ namespace projettaquin
             }
 
             // Successeur haut gauche
-            if (posy > 2 && posx > 2)
+            if (posy > 2 && posx > 2 && _map[(_coordYD - 1), (_coordXD - 1)] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD - 1) + "," + (_coordYD - 1);
@@ -117,7 +117,7 @@ namespace projettaquin
             }
 
             // Successeur haut droit
-            if (posy > 2 && posx < 18)
+            if (posy > 2 && posx < 18 && _map[(_coordYD - 1), (_coordXD + 1)] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD + 1) + "," + (_coordYD - 1);
@@ -126,7 +126,7 @@ namespace projettaquin
             }
 
             // Successeur bas droite
-            if (posy < 18 && posx < 18)
+            if (posy < 18 && posx < 18 && _map[(_coordYD + 1), (_coordXD + 1)] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD + 1) + "," + (_coordYD + 1);
@@ -135,7 +135,7 @@ namespace projettaquin
             }
 
             // Successeur bas gauche
-            if (posy < 18 && posx > 2)
+            if (posy < 18 && posx > 2 && _map[(_coordYD + 1), (_coordXD - 1)] != 'w')
             {
                 // MAJ de la position du noeud en cours
                 string name2 = (_coordXD - 1) + "," + (_coordYD + 1);

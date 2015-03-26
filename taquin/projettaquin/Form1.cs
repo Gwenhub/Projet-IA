@@ -16,6 +16,7 @@ namespace projettaquin
         private char[,] map;
         private List<GenericNode> Lres;
         private int nbAffichee;
+        private List<int> PieceANettoyer = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
 
         public Form1()
         {
@@ -121,8 +122,8 @@ namespace projettaquin
                     n = Lres[nbAffichee] as NodeP1;
                 if(Lres[nbAffichee] is NodeP2)
                     n = Lres[nbAffichee] as NodeP2;
-                //if(Lres[nbAffichee] is NodeP3)
-                //    n = Lres[nbAffichee] as NodeP3;
+                if(Lres[nbAffichee] is NodeP3)
+                    n = Lres[nbAffichee] as NodeP3;
                 int row = int.Parse(n.GetNom().Split(',')[0]);
                 int column = int.Parse(n.GetNom().Split(',')[1]);
                 if (tableLayoutPanel1.GetControlFromPosition(column, row) is PictureBox)
@@ -248,12 +249,8 @@ namespace projettaquin
             Graph g = new Graph();
 
             // path finding 1
-            NodeP1 N0 = new NodeP1(textBox1.Text, textBox2.Text, map);
+            NodeP3 N0 = new NodeP3(textBox1.Text, textBox2.Text, map, 100, PieceANettoyer, 7);
             Lres = g.RechercheSolutionAEtoile(N0);
-
-            // path finding 2
-            NodeP1 N1 = new NodeP1(textBox2.Text, textBox3.Text, map);
-            Lres.AddRange(g.RechercheSolutionAEtoile(N1));
 
             if (Lres.Count == 0)
             {
